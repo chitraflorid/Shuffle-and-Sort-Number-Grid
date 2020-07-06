@@ -1,4 +1,4 @@
-# UI-Test
+# Shuffle and Sort
 
 This is a Simple Shuffle and Sort Button Grid responsive Web Application.
 
