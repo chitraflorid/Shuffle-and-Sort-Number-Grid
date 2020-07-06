@@ -80,17 +80,16 @@ class ButtonGrid {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-     document.querySelector('#action-btns').addEventListener('click', handleActionBtnClick);
-     const btnGrid = new ButtonGrid();
+    document.querySelector('#action-btns').addEventListener('click', handleActionBtnClick);
+    const btnGrid = new ButtonGrid();
 
     function handleActionBtnClick(event) {
-    		const btn = event.target.getAttribute('id');
+        const btn = event.target.getAttribute('id');
 
         switch(btn) {
-        		case 'shuffle':
+            case 'shuffle':
             	btnGrid.shuffleBtns();
             	break;
-
             case 'sort':
             	btnGrid.sortBtns();
             	break;
