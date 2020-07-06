@@ -29,7 +29,7 @@ class ButtonGrid {
     const { btnIndexList } = this;
 
     for (let i = btnIndexList.length - 1; i > 0; i--) {
-     	const newPos = Math.floor(Math.random() * (i + 1));
+        const newPos = Math.floor(Math.random() * (i + 1));
         [btnIndexList[newPos], btnIndexList[i]]  = [btnIndexList[i], btnIndexList[newPos]];
    }
      this._updateBtnsGrid();
@@ -52,9 +52,9 @@ class ButtonGrid {
   _updateBtnsGrid() {
     const { btnIndexList } = this;
 
-		btnIndexList.forEach((val, index) => {
-    		const btn = document.querySelector(`#btn-${index + 1}`);
-    		btn.innerHTML = val;
+    btnIndexList.forEach((val, index) => {
+        const btn = document.querySelector(`#btn-${index + 1}`);
+        btn.innerHTML = val;
         btn.style.backgroundColor = this._getColor();
         btn.className = 'box-transition';
     });
